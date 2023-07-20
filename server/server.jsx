@@ -12,7 +12,7 @@ import express from "express";
 import App from "../src/App";
 
 // Définit une constante "PORT" qui prend la valeur de la variable d'environnement "process.env.PORT" ou 3000 si non définie
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 // Crée une application express
 const app = express();
 

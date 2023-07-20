@@ -36,8 +36,8 @@ const List = () => {
                         {
                             taches.map((tache, index) => (
                                 <tr key={index}>
-                                    <td >{tache.id} test</td>
-                                    <td >{tache.tilte}</td>
+                                    <td >{tache.id}</td>
+                                    <td >{tache.title}</td>
                                     <td >{tache.completed}</td>
                                 </tr>
                             ))
