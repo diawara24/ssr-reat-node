@@ -1,17 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// Importe tous les membres de la bibliothèque "react" sous le nom "React"
+import * as React from "react";
+// Importe le module "react-dom" depuis la bibliothèque "react-dom"
+import ReactDOM from "react-dom";
+// Importe le composant "App" depuis le fichier "./App.js"
+import App from "./App";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// Hydrate le composant "App" dans l'élément HTML avec l'identifiant "root"
+ReactDOM.hydrate(<App />, document.getElementById("root"));
